@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Food</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+<header>
+	<nav class="navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">IC "Repair Design Project"</a>
+			<div class="navbar-menu">
+				<ul class="navbar-list" id="menu">
+					<li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">PROJECTS</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">MEASUREMENT</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">TEAM</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">REVIEWS</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">CONTACTS</a></li>
+				</ul>
+				<div class="menu-right">
+					<div class="menu-contact">
+						<a href="tel:+79287683239"><span>+7 (928) 768-32-39</span></a>
+					</div>
+					<buttona class="call-button">Request a call</buttona>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+		<section class="home-banner">
+			<div class="content">
+				<div class="title">Turnkey Repair in the city of <span>Rostov-on-Don</span></div>
+				<p>Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of
+					materials due to the organization of work</p>
+				<div class="buttons">
+					<button class="btn-big">CALCULATE THE COST</button>
+					<button class="btn-main">SUBMIT YOUR APPLICATION</button>
+				</div>
+			</div>
+		</section>
+		<section class="projects">
+			<div class="slaider-block">
+
+			</div>
+		</section>
+		<!-- Add Video-block -->
+		<!-- <section class="home-video">
+			<div class="video1440">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="ytvideo embed-responsive-item" src="" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen>></iframe>
+					<img class="play_yt" src="../img/icons/play.svg" alt="">
+				</div>
+			</div>
+		</section> -->
+
+<footer>
+	<nav class="navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">IC "Repair Design Project"</a>
+			<div class="navbar-menu">
+				<ul class="navbar-list" id="menu">
+					<li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">PROJECTS</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">MEASUREMENT</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">TEAM</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">REVIEWS</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">CONTACTS</a></li>
+				</ul>
+				<div class="menu-right">
+					<div class="menu-contact">
+						<a href="tel:+79287683239"><span>+7 (928) 768-32-39</span></a>
+					</div>
+					<buttona class="call-button">Request a call</buttona>
+				</div>
+			</div>
+		</div>
+	</nav>
+</footer>	</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+	$('.play_yt').click(function () {
+		$(this).hide();
+		$('.ytvideo').attr('src', 'https://www.youtube.com/embed/X-dMOvEOQiM?autoplay=1');
+	});
+
+	$('#menu li').click(function () {
+		$('#menu li').removeClass('active'); // remove selected from any other item first
+		(this).addClass('active'); //add selected to the one just clicked.
+	});
+
+	var mySwiper = new Swiper('.swiper-container', {
+		slidersPerView: 1,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+
+	var menuSwiper = new Swiper('.swiper-container-menu', {
+		slidesPerView: 'auto',
+		spaceBetween: 63,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+
+	$('.rev-swiper').on('shiw.bs.tab', function (e) {
+		var swiperReviews = new Swiper('.silder-reviwes', {
+			slidesPerView: 2,
+			spaceBetween: 16,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	})
+</script></body>
+
+</html>
