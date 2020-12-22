@@ -1,8 +1,32 @@
+@charset "UTF-8";
+/* Обнуление */
 @import url(https://fonts.googleapis.com/css?family=Yeseva+One:regular);
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:regular,italic);
 * {
-	margin: 0px;
-	padding: 0px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+*,
+::after,
+::before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
 }
 
 #menu li.selected {
@@ -15,48 +39,45 @@ header {
 	color: #FFFFFF;
 	position: relative;
 }
-header .navbar {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+header nav {
 	width: 100%;
 	height: 83px;
 }
-header .navbar .container {
+header .navbar {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	width: 100%;
-	-webkit-box-pack: start;
-	    -ms-flex-pack: start;
-	        justify-content: flex-start;
-	padding: 0px 90px 0px 92px;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 0.5rem 1rem;
+}
+header .navbar .container {
+	width: 1256px;
+	padding-right: 0px;
+	padding-left: 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 header .navbar .container .navbar-brand {
 	text-decoration: none;
 	font-weight: normal;
 	font-size: 11px;
 	line-height: 15px;
+	text-align: center;
 	text-transform: uppercase;
 	color: #E3B873;
-	padding-top: 5px;
-	margin: 0px 95px 0px 0px;
-}
-header .navbar .container .navbar-menu {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
 }
 header .navbar .container .navbar-menu .navbar-list {
 	display: -webkit-box;
@@ -64,17 +85,10 @@ header .navbar .container .navbar-menu .navbar-list {
 	display: flex;
 	text-decoration: none;
 	list-style-type: none;
-}
-header .navbar .container .navbar-menu .navbar-list .nav-item {
-	padding-right: 53px;
-}
-header .navbar .container .navbar-menu .navbar-list .nav-item:last-child {
-	padding-right: 0px;
-}
-header .navbar .container .navbar-menu .navbar-list .nav-item:first-child {
-	padding-left: 27px;
+	margin-right: auto !important;
 }
 header .navbar .container .navbar-menu .navbar-list .nav-item .nav-link {
+	padding: 0px 23.5px;
 	font-weight: 400;
 	font-size: 11px;
 	line-height: 15px;
@@ -87,7 +101,8 @@ header .navbar .container .navbar-menu .navbar-list .nav-item:hover .nav-link {
 header .navbar .container .navbar-menu .navbar-list .nav-item.active .nav-link {
 	color: #E3B873;
 }
-header .navbar .container .navbar-menu .menu-right {
+header .navbar .container .menu-right {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -95,13 +110,16 @@ header .navbar .container .navbar-menu .menu-right {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-header .navbar .container .navbar-menu .menu-right .menu-contact {
+header .navbar .container .menu-right .menu-contact {
 	width: 126px;
 	text-align: right;
-	padding-left: 67px;
-	padding-right: 45px;
+	margin-right: 45px;
 }
-header .navbar .container .navbar-menu .menu-right .menu-contact a span {
+header .navbar .container .menu-right .menu-contact a {
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+}
+header .navbar .container .menu-right .menu-contact a span {
 	font-weight: normal;
 	font-size: 11px;
 	line-height: 15px;
@@ -109,7 +127,7 @@ header .navbar .container .navbar-menu .menu-right .menu-contact a span {
 	        text-decoration-line: underline;
 	color: #E3B873;
 }
-header .navbar .container .navbar-menu .menu-right .call-button {
+header .navbar .container .menu-right .call-button {
 	width: 161px;
 	text-align: center;
 	background: #E3B873;
@@ -126,14 +144,26 @@ header .navbar .container .navbar-menu .menu-right .call-button {
 
 body {
 	width: 1440px;
+	height: 100%;
 	font-family: "Nunito Sans";
 	font-weight: 400;
 	font-size: 16px;
 	color: black;
 }
 
+.container {
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .wrapper .home-banner {
 	background-image: url(/img/main-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 100%;
 	height: 707px;
@@ -149,8 +179,10 @@ body {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	max-width: 550px;
-	padding: 192px 627px 208px 134px;
+	max-width: 520px;
+	position: absolute;
+	top: 277px;
+	left: 134px;
 }
 .wrapper .home-banner .content .title {
 	font-family: "Yeseva One";
@@ -158,7 +190,7 @@ body {
 	line-height: 53px;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	margin-bottom: 19px;
+	margin-bottom: 16px;
 }
 .wrapper .home-banner .content .title span {
 	color: #E3B873;
@@ -167,8 +199,7 @@ body {
 	font-size: 22px;
 	line-height: 36px;
 	color: #FFFFFF;
-	width: 500px;
-	margin-bottom: 41px;
+	margin-bottom: 21px;
 }
 .wrapper .home-banner .content .buttons .btn-big {
 	border-width: 0px;
@@ -181,6 +212,7 @@ body {
 	line-height: 51px;
 	text-align: center;
 	color: #FFFFFF;
+	margin-right: 16px;
 }
 .wrapper .home-banner .content .buttons .btn-main {
 	width: 207px;
@@ -190,15 +222,164 @@ body {
 	        box-sizing: border-box;
 	border-radius: 2px;
 	font-size: 11px;
-	line-height: 51px;
+	line-height: 49px;
 	text-align: center;
 	color: #FFFFFF;
 }
 .wrapper .projects {
 	background: #131313;
-	width: 100%;
 	height: 1074px;
+	position: relative;
 }
+.wrapper .projects .swiper-container {
+	position: relative;
+	width: 100%;
+	padding: 107px 134px 90px 134px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .top-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	padding-bottom: 52px;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .top-content .card-name {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-family: "Yeseva One";
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.3);
+	padding: 0px 30px;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .top-content .card-name.active {
+	color: #E3B873;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .top-content .card-name.active img {
+	position: relative;
+	width: 105%;
+	margin: 0px;
+	padding-top: 5px;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide .slide-info {
+	width: 36%;
+	padding-right: 50px;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide .slide-info .card-top h2 {
+	font-size: 27px;
+	line-height: 37px;
+	letter-spacing: -0.07em;
+	text-transform: uppercase;
+	color: #E3B873;
+	padding-bottom: 34px;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide .slide-info .card-top p {
+	font-size: 14px;
+	line-height: 27px;
+	color: #FFFFFF;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide .slide-info .card-bottom {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: auto auto;
+	grid-template-columns: auto auto;
+	-ms-grid-rows: 73px 73px;
+	grid-template-rows: 73px 73px;
+	padding-top: 40px;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide .slide-info .card-bottom > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide .slide-info .card-bottom > *:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide .slide-info .card-bottom > *:nth-child(3) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide .slide-info .card-bottom > *:nth-child(4) {
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide .slide-info .card-bottom h3 {
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #E3B873;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide .slide-info .card-bottom p {
+	font-size: 13px;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+.wrapper .projects .swiper-container .swiper-wrapper .block .slide img {
+	width: 64%;
+	height: 482px;
+}
+.wrapper .projects .swiper-container .swiper-button-next,
+.wrapper .projects .swiper-container .swiper-button-prev {
+	top: 78.5%;
+}
+.wrapper .projects .swiper-container .swiper-button-next {
+	left: 350px;
+}
+.wrapper .projects .swiper-container .swiper-button-prev {
+	left: 160px;
+}
+.wrapper .projects .swiper-container .swiper-button-next:after,
+.wrapper .projects .swiper-container .swiper-button-prev:after {
+	content: "";
+}
+.wrapper .projects .swiper-container .swiper-button-next.swiper-button-disabled,
+.wrapper .projects .swiper-container .swiper-button-prev.swiper-button-disabled {
+	content: "";
+	opacity: 1;
+}
+.wrapper .projects .swiper-container .swiper-pagination {
+	width: auto;
+	height: 0px;
+	left: 16%;
+	top: 77%;
+}
+.wrapper .projects .swiper-container .swiper-pagination-bullet {
+	margin-right: 17.5px;
+	width: 9.6px !important;
+	height: 9.6px !important;
+	background: rgba(255, 255, 255, 0.3) !important;
+	opacity: 1 !important;
+	cursor: pointer;
+}
+.wrapper .projects .swiper-container .swiper-pagination-bullet-active {
+	width: 9.6px !important;
+	height: 9.6px !important;
+	background: white !important;
+}
+
 #menu li.selected {
 	color: #E3B873;
 }
