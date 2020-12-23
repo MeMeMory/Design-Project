@@ -374,6 +374,226 @@ body {
 	height: 9.6px !important;
 	background: white !important;
 }
+.wrapper .projects .bottom {
+	padding-bottom: 31px;
+}
+.wrapper .projects .bottom h2 {
+	font-family: "Yeseva One";
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.wrapper .projects .bottom .img-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.wrapper .projects .bottom .img-block .ward {
+	padding: 12px 9px 0 9px;
+}
+.wrapper .projects .bottom .img-block .ward-arr {
+	width: 32px;
+}
+.wrapper .projects .video-720 {
+	width: 817px;
+	margin: 0 auto;
+	background: url(../img/videobg.jpg);
+	background-size: cover;
+}
+.wrapper .projects .video-720 .play_yt {
+	position: relative;
+	cursor: pointer;
+}
+.wrapper .projects .video-720 .embed-responsive {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	height: 434px;
+}
+.wrapper .projects .video-720 .embed-responsive .bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+}
+.wrapper .reg {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-top: 270px;
+}
+.wrapper .reg .container {
+	margin: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: top;
+	    -ms-flex-pack: top;
+	        justify-content: top;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding: 0;
+	width: 800px;
+	height: 700px;
+}
+.wrapper .reg .container img {
+	padding-bottom: 34px;
+}
+.wrapper .reg .container p {
+	width: 681px;
+	font-size: 18px;
+	line-height: 37px;
+	text-align: center;
+	color: #363636;
+	padding-bottom: 90px;
+}
+.wrapper .reg .container .contact-block .form-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.wrapper .reg .container .contact-block .form-container form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding-bottom: 39px;
+}
+.wrapper .reg .container .contact-block .form-container form .inpb {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding-right: 58px;
+}
+.wrapper .reg .container .contact-block .form-container form .inpb span {
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(54, 54, 54, 0.5);
+}
+.wrapper .reg .container .contact-block .form-container form .inpb input {
+	font-size: 14px;
+	line-height: 23px;
+	color: #363636;
+}
+.wrapper .reg .container .contact-block .form-container form .inpb img {
+	padding-bottom: 0;
+}
+.wrapper .reg .container .contact-block .form-container form button {
+	background: #E3B873;
+	-webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+	        box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+	border-radius: 2px;
+	width: 200px;
+	height: 50px;
+	font-size: 13px;
+	line-height: 27px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.wrapper .reg .container .contact-block .form-container .line {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 163.68%;
+	color: #181818;
+	text-align: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.wrapper .reg .container .contact-block .form-container .line .custom-checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.wrapper .reg .container .contact-block .form-container .line .custom-checkbox + label {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+.wrapper .reg .container .contact-block .form-container .line .custom-checkbox + label::before {
+	content: "";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	-webkit-box-flex: 0;
+	    -ms-flex-positive: 0;
+	        flex-grow: 0;
+	border: 1px solid #E3B873;
+	border-radius: 10%;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+.wrapper .reg .container .contact-block .form-container .line .custom-checkbox:checked + label::before {
+	border-color: #E3B873;
+	background-color: #E3B873;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.wrapper .reg .container .contact-block .form-container .line input {
+	margin-right: 9px;
+}
+.wrapper .reg .container .contact-block .form-container .line label {
+	margin: 0;
+}
 
 #menu li.selected {
 	color: #E3B873;
