@@ -29,7 +29,7 @@ li {
 	list-style: none;
 }
 
-img {
+../img {
 	vertical-align: top;
 }
 
@@ -297,7 +297,7 @@ body {
 .wrapper .projects .swiper-container .swiper-wrapper .swiper-slide .top-content .card-name.active {
 	color: #E3B873;
 }
-.wrapper .projects .swiper-container .swiper-wrapper .swiper-slide .top-content .card-name.active img {
+.wrapper .projects .swiper-container .swiper-wrapper .swiper-slide .top-content .card-name.active ../img {
 	position: relative;
 	width: 105%;
 	margin: 0px;
@@ -364,7 +364,7 @@ body {
 	line-height: 21px;
 	color: #FFFFFF;
 }
-.wrapper .projects .swiper-container .swiper-wrapper .swiper-slide .slide img {
+.wrapper .projects .swiper-container .swiper-wrapper .swiper-slide .slide ../img {
 	width: 56%;
 	height: 482px;
 }
@@ -423,7 +423,7 @@ body {
 	color: #FFFFFF;
 	padding-bottom: 12px;
 }
-.wrapper .video .top .img-block {
+.wrapper .video .top .../img-block {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -434,10 +434,10 @@ body {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-.wrapper .video .top .img-block .ward {
+.wrapper .video .top .../img-block .ward {
 	padding: 0 9px;
 }
-.wrapper .video .top .img-block .ward-arr {
+.wrapper .video .top .../img-block .ward-arr {
 	width: 32px;
 }
 .wrapper .video .video-817 {
@@ -507,7 +507,7 @@ body {
 	padding: 0;
 	width: 800px;
 }
-.wrapper .reg .container img {
+.wrapper .reg .container ../img {
 	padding-bottom: 26px;
 }
 .wrapper .reg .container p {
@@ -567,7 +567,7 @@ body {
 	line-height: 23px;
 	color: #363636;
 }
-.wrapper .reg .container .contact-block .form-container form .inpb img {
+.wrapper .reg .container .contact-block .form-container form .inpb ../img {
 	padding-bottom: 0;
 }
 .wrapper .reg .container .contact-block .form-container form button {
@@ -669,7 +669,7 @@ body {
 	color: #181818;
 	padding-bottom: 13px;
 }
-.wrapper .repair .section-title img {
+.wrapper .repair .section-title ../img {
 	padding-bottom: 31px;
 }
 .wrapper .repair .repair-container {
@@ -695,7 +695,7 @@ body {
 	        align-items: center;
 	border: none;
 }
-.wrapper .repair .repair-container .card img {
+.wrapper .repair .repair-container .card ../img {
 	max-width: 392px;
 	max-height: 421px;
 }
@@ -754,7 +754,7 @@ body {
 .wrapper .departure .departure-info {
 	width: 60%;
 	height: 645px;
-	background-image: url(/img/build-bg.jpg);
+	background-image: url(../img/build-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: auto;
 	display: -webkit-box;
@@ -1009,7 +1009,7 @@ body {
 	padding-top: 38px;
 	margin: 0 auto;
 }
-.wrapper .departure .departure-request .help img {
+.wrapper .departure .departure-request .help ../img {
 	width: 100px;
 	padding-right: 25px;
 }
