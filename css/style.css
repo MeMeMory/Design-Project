@@ -186,7 +186,7 @@ body {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	background-image: url(..../img/main-bg.jpg);
+	background-image: url(../imgimg/main-bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -462,7 +462,7 @@ body {
 	width: 817px;
 	height: 434px;
 	margin: 0 auto;
-	background: url(..../img/videobg.jpg);
+	background: url(../imgimg/videobg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -763,7 +763,7 @@ body {
 .wrapper .departure .departure-info {
 	width: 60%;
 	height: 645px;
-	background-image: url(..../img/build-bg.jpg);
+	background-image: url(../imgimg/build-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: auto;
 	display: -webkit-box;
@@ -1030,7 +1030,7 @@ body {
 }
 .wrapper .fantasies {
 	position: relative;
-	background: url(..../img/bg-fantasies.jpg);
+	background: url(../imgimg/bg-fantasies.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
