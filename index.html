@@ -15,13 +15,13 @@
 
 <body>
 	<div class="wrapper">
-<header>
+<header id="home">
 	<nav class="navbar navbar-light">
 		<div class="head-container">
 			<a class="navbar-brand" href="index.html">IC "Repair Design Project"</a>
 			<div class="navbar-menu">
 				<ul class="navbar-list" id="menu">
-					<li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
+					<li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
 					<li class="nav-item"><a class="nav-link" href="#PROJECTS">PROJECTS</a></li>
 					<li class="nav-item"><a class="nav-link" href="#MEASUREMENT">MEASUREMENT</a></li>
 					<li class="nav-item"><a class="nav-link" href="#TEAM">TEAM</a></li>
@@ -50,9 +50,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="projects">
+		<section class="projects" id="PROJECTS">
 			<div class="container">
-				<a name="PROJECTS"></a>
 				<!-- Swiper -->
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
@@ -222,7 +221,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="repair">
+		<section class="repair" id="MEASUREMENT">
 			<div class="container">
 				<div class="section-title">
 					<h2>TYPES OF REPAIR</h2>
@@ -341,7 +340,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="fantasies">
+		<section class="fantasies" id="TEAM">
 			<div class="bg"></div>
 			<div class="container">
 				<div class="title-block">
@@ -372,7 +371,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="clients">
+		<section class="clients" id="REVIEWS">
 			<div class="container">
 				<div class="title">
 					<h2>our clients</h2>
@@ -478,7 +477,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="content">
+				<div class="content" id="CONTACTS">
 					<h2>Rostov-on-Don, Nansen St., 239 Shopping Center
 						Decorum Tel +7 (928) 768 32 29</h2>
 					<div class="soc-links">
@@ -515,36 +514,76 @@
 	</nav>
 </header>	</div>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script>
 	$('.play_yt').click(function () {
-				$(this).hide();
-				$('.ytvideo').attr('src', 'https://www.youtube.com/embed/AWKzr6n0ea0?autoplay=1&loop=1&&playlist=Video_ID');
-				});
+		$(this).hide();
+		$('.ytvideo').attr('src', 'https://www.youtube.com/embed/AWKzr6n0ea0?autoplay=1&loop=1&&playlist=Video_ID');
+	});
 
-			// $('#menu li').click(function () {
-			// 	$('#menu li').removeClass('active'); // remove selected from any other item first
-			// 	(this).addClass('active'); //add selected to the one just clicked.
-			// });
+	$(document).ready(function () {
+		$('#menu li a').click(function () {
+			if ($(this).parent().hasClass('active')) {
+				return false;
+			}
+			$('#menu li').removeClass('active');
+			$(this).parent().addClass('active');
+		});
+	});
 
-			var swiper = new Swiper('.swiper-container', {
-				slidesPerView: 1,
-				spaceBetween: 30,
-				cssMode: true,
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-				mousewheel: true,
-				keyboard: true,
-			});
+	// Select all links with hashes
+	$('a[href*="#"]')
+		// Remove links that don't actually link to anything
+		.not('[href="#"]')
+		.not('[href="#0"]')
+		.click(function (event) {
+			// On-page links
+			if (
+				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+				location.hostname == this.hostname
+			) {
+				// Figure out element to scroll to
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				// Does a scroll target exist?
+				if (target.length) {
+					// Only prevent default if animation is actually gonna happen
+					event.preventDefault();
+					$('html, body').animate({
+						scrollTop: target.offset().top
+					}, 1000, function () {
+						// Callback after animation
+						// Must change focus!
+						var $target = $(target);
+						$target.focus();
+						if ($target.is(":focus")) { // Checking if the target was focused
+							return false;
+						} else {
+							$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+							$target.focus(); // Set focus again
+						};
+					});
+				}
+			}
+		});
+
+	var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		cssMode: true,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		mousewheel: true,
+		keyboard: true,
+	});
 </script></body>
 
 </html>
