@@ -5,8 +5,8 @@
 	<title>Sait</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"> -->
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
 		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
@@ -18,7 +18,7 @@
 <header>
 	<a href="" id="home"></a>
 	<nav class="navbar navbar-light">
-		<div class="head-container">
+		<div class="header-container">
 			<a class="navbar-brand" href="index.html">IC "Repair Design Project"</a>
 			<div class="navbar-menu">
 				<ul class="navbar-list" id="menu">
@@ -34,7 +34,7 @@
 				<div class="menu-contact">
 					<a href="tel:+79287683239"><span>+7 (928) 768-32-39</span></a>
 				</div>
-				<buttona class="call-button">Request a call</buttona>
+				<button class="call-button">Request a call</button>
 			</div>
 		</div>
 	</nav>
@@ -89,6 +89,10 @@
 											<p>Upon request</p>
 										</div>
 									</div>
+									<div class="mobile-arr">
+										<img class="left" src="/img/icons/swiperArr-left.svg" alt="">
+										<img class="right" src="/img/icons/swiperArr-right.svg" alt="">
+									</div>
 									<img src="/img/icons/swiper-arrows.svg" alt="">
 								</div>
 								<img class="slide-img" src="img/slide-image1.jpg" alt="">
@@ -100,23 +104,26 @@
 
 		</section>
 		<section class="video">
-			<div class="top">
-				<h2>online control</h2>
-				<div class="img-block">
-					<img class="ward-arr" src="img/icons/arr.svg" alt="">
-					<img class="ward" src="img/icons/ward.svg" alt="">
-					<img class="ward-arr" src="img/icons/arr.svg" alt="">
+			<div class="container">
+				<div class="top">
+					<h2>online control</h2>
+					<div class="img-block">
+						<img class="ward-arr" src="img/icons/arr.svg" alt="">
+						<img class="ward" src="img/icons/ward.svg" alt="">
+						<img class="ward-arr" src="img/icons/arr.svg" alt="">
+					</div>
+				</div>
+				<!-- Add Video-block -->
+				<div class="video-817">
+					<div class="bg"></div>
+					<iframe class="ytvideo embed-responsive-item" src="" frameborder="0"
+						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+					<img class="play_yt" src="img/icons/play.svg" alt="play">
 				</div>
 			</div>
-			<!-- Add Video-block -->
-			<div class="video-817">
-				<div class="bg"></div>
-				<iframe class="ytvideo embed-responsive-item" src="" frameborder="0"
-					allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
-				<img class="play_yt" src="img/icons/play.svg" alt="play">
-			</div>
 		</section>
+
 		<section class="reg">
 			<div class="container">
 				<img src="img/icons/arr-mid.svg" alt="">
@@ -124,18 +131,16 @@
 					you can go to our website and monitor the progress of work in your apartment. You can watch the live
 					broadcast from one of our facilities!</p>
 				<p class="last">Leave a request below and you will receive a link to the broadcast.</p>
-				<div class="contact-block">
+				<div class="contact-form">
 					<div class="form-container">
 						<form action="" method="POST">
 							<div class="inpb">
 								<span>Name</span>
 								<input class="text" name="name" type="text" placeholder="What is your name:">
-								<img src="img/icons/arr-form.svg" alt="">
 							</div>
 							<div class="inpb">
 								<span>Phone</span>
 								<input class="phone" name="phone" type="text" placeholder="Your phone number:">
-								<img src="img/icons/arr-form.svg" alt="">
 							</div>
 							<button>Submit</button>
 						</form>
@@ -147,6 +152,7 @@
 				</div>
 			</div>
 		</section>
+
 		<a href="" id="MEASUREMENT"></a>
 		<section class="repair">
 			<div class="container">
@@ -243,17 +249,14 @@
 							<div class="inpb">
 								<span>Name</span>
 								<input class="text" name="name" type="text" placeholder="What is your name:">
-								<img src="img/icons/request-arr.svg" alt="">
 							</div>
 							<div class="inpb">
 								<span>Phone</span>
 								<input class="phone" name="phone" type="text" placeholder="Your phone number:">
-								<img src="img/icons/request-arr.svg" alt="">
 							</div>
 							<div class="inpb">
 								<span>Email</span>
 								<input class="phone" name="phone" type="text" placeholder="Your email">
-								<img src="img/icons/request-arr.svg" alt="">
 							</div>
 						</form>
 						<div class="line">
