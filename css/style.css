@@ -1802,7 +1802,7 @@ body {
 
 	.reg {
 		height: 479px;
-		top: -315px !important;
+		top: -316px !important;
 		background: #131313;
 	}
 	.reg .container {
@@ -2175,7 +2175,10 @@ body {
 		display: none;
 	}
 }
-@media screen and (min-device-width: 320px) and (max-device-width: 375px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 374px) {
+	.reg .container p {
+		width: 300px !important;
+	}
 	.reg .container .last {
 		padding-bottom: 60px !important;
 	}
@@ -2183,9 +2186,9 @@ body {
 		padding-bottom: 60px !important;
 	}
 	.reg .container .contact-form .form-container button {
-		-webkit-transform: translateY(100px);
-		    -ms-transform: translateY(100px);
-		        transform: translateY(100px);
+		-webkit-transform: translateY(115px);
+		    -ms-transform: translateY(115px);
+		        transform: translateY(115px);
 	}
 
 	.mobile .map-mobile .container .content h2 {
