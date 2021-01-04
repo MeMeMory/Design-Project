@@ -297,18 +297,22 @@ body {
 	min-width: 100%;
 }
 .wrapper .home-banner {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	background-image: url(../img/main-bg.jpg);
+	background-image: url(../img-webp/main-bg.webp);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: 707px;
+}
+.wrapper .home-banner .bg {
+	background: rgba(0, 0, 0, 0.7);
 }
 .wrapper .home-banner .container .content {
 	max-width: 520px;
@@ -543,7 +547,7 @@ body {
 	max-width: 817px;
 	height: 434px;
 	margin: 0 auto;
-	background: url(../img/videobg.jpg);
+	background: url(../img-webp/videobg.webp);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1159,7 +1163,7 @@ body {
 }
 .wrapper .fantasies {
 	position: relative;
-	background: url(../img/bg-fantasies.jpg);
+	background: url(../img-webp/bg-fantasies.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
