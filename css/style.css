@@ -1942,8 +1942,10 @@ body {
 		display: none;
 	}
 
-	.mobile .fantasies-mobile {
+	.mobile {
 		display: block !important;
+	}
+	.mobile .fantasies-mobile {
 		background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #181818), color-stop(45%, white));
 		background: -o-linear-gradient(bottom, #181818 45%, white 45%);
 		background: linear-gradient(to top, #181818 45%, white 45%);
