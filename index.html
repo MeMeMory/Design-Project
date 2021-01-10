@@ -17,19 +17,19 @@
 	<div class="wrapper">
 <header>
 	<a href="" id="home"></a>
-	<nav class="navbar navbar-light">
+	<nav class="navbar">
 		<div class="header-container">
-			<a class="navbar-brand" href="index.html">IC "Repair Design Project"</a>
-			<div class="navbar-menu">
-				<ul class="navbar-list" id="menu">
-					<li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
-					<li class="nav-item"><a class="nav-link" href="#PROJECTS">PROJECTS</a></li>
-					<li class="nav-item"><a class="nav-link" href="#MEASUREMENT">MEASUREMENT</a></li>
-					<li class="nav-item"><a class="nav-link" href="#TEAM">TEAM</a></li>
-					<li class="nav-item"><a class="nav-link" href="#REVIEWS">REVIEWS</a></li>
-					<li class="nav-item"><a class="nav-link" href="#CONTACTS">CONTACTS</a></li>
-				</ul>
+			<div class="menu-brand">
+				<a class="navbar-brand" href="index.html">IC "Repair Design Project"</a>
 			</div>
+			<ul class="navbar-menu" id="menu">
+				<li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+				<li class="nav-item"><a class="nav-link" href="#PROJECTS">PROJECTS</a></li>
+				<li class="nav-item"><a class="nav-link" href="#MEASUREMENT">MEASUREMENT</a></li>
+				<li class="nav-item"><a class="nav-link" href="#TEAM">TEAM</a></li>
+				<li class="nav-item"><a class="nav-link" href="#REVIEWS">REVIEWS</a></li>
+				<li class="nav-item"><a class="nav-link" href="#CONTACTS">CONTACTS</a></li>
+			</ul>
 			<div class="menu-right">
 				<div class="menu-contact">
 					<a href="tel:+79287683239"><span>+7 (928) 768-32-39</span></a>
@@ -47,7 +47,7 @@
 						materials due to the organization of work</p>
 					<div class="buttons">
 						<button class="btn-big">CALCULATE THE COST</button>
-						<button class="btn-main">SUBMIT YOUR APPLICATION</button>
+						<button class="btn-big">SUBMIT YOUR APPLICATION</button>
 					</div>
 				</div>
 			</div>
@@ -218,23 +218,22 @@
 			<div class="container">
 				<div class="departure-info">
 					<div class="info-block">
-						<div class="info-1">
+						<div class="info">
 							<span class="circle">01</span>
-							<span>Our specialist will arrive for measurements per day contact, or appoint a date convenient for
-								you
-							</span>
+							<span class="text">Our specialist will arrive for measurements per day contact, or appoint a date
+								convenient for you</span>
 						</div>
-						<div class="info-2">
+						<div class="info">
 							<span class="circle">02</span>
-							<span>Free metering</span>
+							<span class="text">Free metering</span>
 						</div>
-						<div class="info-3">
+						<div class="info">
 							<span class="circle">03</span>
-							<span>Free consultation</span>
+							<span class="text">Free consultation</span>
 						</div>
-						<div class="info-4">
+						<div class="info">
 							<span class="circle">04</span>
-							<span>Get a cost estimate and the timing of your future repairs</span>
+							<span class="text">Get a cost estimate and the timing of your future repairs</span>
 						</div>
 					</div>
 				</div>
@@ -275,7 +274,7 @@
 				<div class="title-block">
 					<h2>We realize your wildest fantasies</h2>
 					<div class="fantasies-names">
-						<span class="fantasies-item active">American classic</span>
+						<span class="fantasies-item">American classic</span>
 						<span class="fantasies-item">Empire</span>
 						<span class="fantasies-item">Classical</span>
 						<span class="fantasies-item">Loft</span>
@@ -396,11 +395,11 @@
 						<div class="card-bottom">
 							<div class="sec-1">
 								<img src="img/icons/area.svg" alt="area">
-								<h4>40 m2</h4>
+								<h4>90 m2</h4>
 							</div>
 							<div class="sec-2">
 								<img src="img/icons/list.svg" alt="list">
-								<h4>48 DAYS</h4>
+								<h4>128 DAYS</h4>
 							</div>
 						</div>
 					</div>
@@ -417,11 +416,11 @@
 						<div class="card-bottom">
 							<div class="sec-1">
 								<img src="img/icons/area.svg" alt="area">
-								<h4>40 m2</h4>
+								<h4>56 m2</h4>
 							</div>
 							<div class="sec-2">
 								<img src="img/icons/list.svg" alt="list">
-								<h4>48 DAYS</h4>
+								<h4>86 DAYS</h4>
 							</div>
 						</div>
 					</div>
@@ -433,31 +432,29 @@
 			<div class="bg"></div>
 			<div class="container">
 				<div class="questions">
-					<div class="container">
-						<div class="content-questions">
-							<h2>have any questions?</h2>
-							<form action="" method="POST">
-								<div class="row">
-									<div class="inpb">
-										<span>Name</span>
-										<input class="text" name="name" type="text" placeholder="What is your name:">
-									</div>
-									<div class="inpb">
-										<span>Phone</span>
-										<input class="phone" name="phone" type="text" placeholder="Your phone number:">
-									</div>
+					<div class="content-questions">
+						<h2>have any questions?</h2>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="inpb">
+									<span>Name</span>
+									<input class="text" name="name" type="text" placeholder="What is your name:">
 								</div>
 								<div class="inpb">
-									<span>Question</span>
-									<input class="question" name="question" type="text" placeholder="I want to know:">
+									<span>Phone</span>
+									<input class="phone" name="phone" type="text" placeholder="Your phone number:">
 								</div>
-							</form>
-							<div class="line">
-								<input type="checkbox" class="custom-checkbox" checked="checked" id="data-3">
-								<label for="data-3">I agree to the processing of personal data</label>
 							</div>
-							<button>Submit</button>
+							<div class="inpb">
+								<span>Question</span>
+								<input class="question" name="question" type="text" placeholder="I want to know:">
+							</div>
+						</form>
+						<div class="line">
+							<input type="checkbox" class="custom-checkbox" checked="checked" id="data-3">
+							<label for="data-3">I agree to the processing of personal data</label>
 						</div>
+						<button>Submit</button>
 					</div>
 				</div>
 				<a href="" id="CONTACTS"></a>
@@ -475,24 +472,24 @@
 			</div>
 		</section>
 <footer>
-	<nav class="navbar navbar-light">
-		<div class="head-container">
-			<a class="navbar-brand" href="index.html">IC "Repair Design Project"</a>
-			<div class="navbar-menu">
-				<ul class="navbar-list" id="menu">
-					<li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
-					<li class="nav-item"><a class="nav-link" href="#PROJECTS">PROJECTS</a></li>
-					<li class="nav-item"><a class="nav-link" href="#MEASUREMENT">MEASUREMENT</a></li>
-					<li class="nav-item"><a class="nav-link" href="#TEAM">TEAM</a></li>
-					<li class="nav-item"><a class="nav-link" href="#REVIEWS">REVIEWS</a></li>
-					<li class="nav-item"><a class="nav-link" href="#CONTACTS">CONTACTS</a></li>
-				</ul>
+	<nav class="navbar">
+		<div class="header-container">
+			<div class="menu-brand">
+				<a class="navbar-brand" href="index.html">IC "Repair Design Project"</a>
 			</div>
+			<ul class="navbar-menu" id="menu">
+				<li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+				<li class="nav-item"><a class="nav-link" href="#PROJECTS">PROJECTS</a></li>
+				<li class="nav-item"><a class="nav-link" href="#MEASUREMENT">MEASUREMENT</a></li>
+				<li class="nav-item"><a class="nav-link" href="#TEAM">TEAM</a></li>
+				<li class="nav-item"><a class="nav-link" href="#REVIEWS">REVIEWS</a></li>
+				<li class="nav-item"><a class="nav-link" href="#CONTACTS">CONTACTS</a></li>
+			</ul>
 			<div class="menu-right">
 				<div class="menu-contact">
 					<a href="tel:+79287683239"><span>+7 (928) 768-32-39</span></a>
 				</div>
-				<buttona class="call-button">Request a call</buttona>
+				<button class="call-button">Request a call</button>
 			</div>
 		</div>
 	</nav>
