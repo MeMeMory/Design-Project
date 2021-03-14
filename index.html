@@ -53,6 +53,8 @@
 			</div>
 		</section>
 		<a href="" id="PROJECTS"></a>
+
+
 		<section class="projects">
 			<div class="container">
 				<div class="swiper-wrapper">
@@ -73,32 +75,40 @@
 								<div class="card-bottom">
 									<div class="block-1">
 										<h3>City:</h3>
-										<p>Rostov-on-Don LCD admiral</p>
+										<p class="card-city">Rostov-on-Don LCD admiral</p>
 									</div>
 									<div class="block-2">
 										<h3>apartment area:</h3>
-										<p>81 m2</p>
+										<p class="card-area">81 m2</p>
 									</div>
 									<div class="block-3">
 										<h3>Repair time:</h3>
-										<p>3.5 months</p>
+										<p class="card-time">3.5 months</p>
 									</div>
 									<div class="block-4">
 										<h3>Repair Cost:</h3>
-										<p>Upon request</p>
+										<p class="card-cost">Upon request</p>
 									</div>
 								</div>
 								<div class="mobile-arr">
 									<img class="left" src="img/icons/swiperArr-left.svg" alt="">
 									<img class="right" src="img/icons/swiperArr-right.svg" alt="">
 								</div>
-								<img src="img/icons/swiper-arrows.svg" alt="">
 							</div>
-							<img class="slide-img" src="img-webp/slide-image1.webp" alt="">
+							<img src="img-webp/slide-image1.webp" class="active-img" alt="">
 						</div>
+					</div>
+					<!-- Add Arrows s Pagination -->
+					<div class="slide-pagination">
+						<img src="img/icons/lArr-slider.svg" alt="" class="arr-left arrow">
+						<div class="circle enabled"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<img src="img/icons/rArr-slider.svg" alt="" class="arr-right arrow">
 					</div>
 				</div>
 			</div>
+
 
 		</section>
 		<section class="video">
@@ -565,6 +575,7 @@
 	// 	mousewheel: true,
 	// 	keyboard: true,
 	// });
-</script></body>
+</script>	<script src="js/main.js"></script>
+</body>
 
 </html>
