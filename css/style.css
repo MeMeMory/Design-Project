@@ -493,6 +493,7 @@ body {
 .wrapper .projects .swiper-wrapper .swiper-slide .slide .slide-info .card-bottom p {
 	font-size: calc(11px + (13 - 11) * ((100vw - 769px) / (1440 - 769)));
 	line-height: 120%;
+	margin-right: 5px;
 	color: #FFFFFF;
 }
 .wrapper .projects .swiper-wrapper .swiper-slide .slide .slide-info .mobile-arr {
