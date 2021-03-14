@@ -498,8 +498,34 @@ body {
 .wrapper .projects .swiper-wrapper .swiper-slide .slide .slide-info .mobile-arr {
 	display: none;
 }
-.wrapper .projects .swiper-wrapper .swiper-slide .slide .slide-img {
+.wrapper .projects .swiper-wrapper .swiper-slide .slide .active-img {
+	max-width: 679px;
 	width: calc(399px + (679 - 399) * ((100vw - 769px) / (1440 - 769)));
+}
+.wrapper .projects .swiper-wrapper .slide-pagination {
+	width: calc(195px + (205 - 195) * ((100vw - 769px) / (1440 - 769)));
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.wrapper .projects .swiper-wrapper .slide-pagination .circle {
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.3);
+}
+.wrapper .projects .swiper-wrapper .slide-pagination .circle:hover {
+	cursor: pointer;
+	background: white;
+}
+.wrapper .projects .swiper-wrapper .slide-pagination .enabled {
+	background: #FFFFFF;
 }
 .wrapper .video {
 	position: relative;
@@ -584,9 +610,9 @@ body {
 	    -ms-grid-row-align: center;
 	    align-self: center;
 	cursor: pointer;
-	width: calc(90px + (145 - 90) * ((100vw - 769px) / (1440 - 769)));
-	top: calc(75px + (160 - 75) * ((100vw - 769px) / (1440 - 769)));
-	left: calc(135px + (335 - 135) * ((100vw - 769px) / (1440 - 769)));
+	width: 145px;
+	top: 160px;
+	left: 335px;
 }
 .wrapper .video .container .video-817 .ytvideo {
 	position: relative;
@@ -1734,9 +1760,6 @@ body {
 	.projects .swiper-wrapper .slide .slide-info .card-bottom p {
 		font-size: 13px !important;
 	}
-	.projects .swiper-wrapper .slide .slide-img {
-		width: 679px !important;
-	}
 
 	.video {
 		-webkit-transform: translateY(-2px);
@@ -1749,11 +1772,6 @@ body {
 	.video .top {
 		padding-bottom: 31px !important;
 	}
-	.video .video-817 .play_yt {
-		width: 145px !important;
-		top: 160px !important;
-		left: 335px !important;
-	}
 
 	.reg {
 		padding-bottom: 148px !important;
@@ -1765,9 +1783,6 @@ body {
 		padding-bottom: 82px !important;
 	}
 
-	.repair .repair-container .card .info .text {
-		width: 267px !important;
-	}
 	.repair .repair-container .card .info .text h3 {
 		font-size: 18px !important;
 	}
