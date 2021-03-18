@@ -735,7 +735,7 @@ body {
 	border-radius: 2px;
 	width: calc(140px + (200 - 140) * ((100vw - 769px) / (1440 - 769)));
 	max-width: 200px;
-	height: calc(40px + (50 - 40) * ((100vw - 769px) / (1440 - 769)));
+	height: calc(50px + (50 - 50) * ((100vw - 769px) / (1440 - 769)));
 	max-height: 50px;
 	font-size: 13px;
 	line-height: 136%;
@@ -1769,6 +1769,10 @@ body {
 	}
 	.video .top {
 		padding-bottom: 31px !important;
+	}
+	.video .video-817 .play_yt {
+		top: 165px !important;
+		left: 340px !important;
 	}
 
 	.reg {
