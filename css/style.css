@@ -607,13 +607,10 @@ body {
 }
 .wrapper .video .container .video-817 .play_yt {
 	position: absolute;
-	-ms-flex-item-align: center;
-	    -ms-grid-row-align: center;
-	    align-self: center;
 	cursor: pointer;
 	width: 145px;
-	top: 160px;
-	left: 335px;
+	top: calc(50px + (140 - 50) * ((100vw - 769px) / (1440 - 769)));
+	left: calc(110px + (345 - 110) * ((100vw - 769px) / (1440 - 769)));
 }
 .wrapper .video .container .video-817 .ytvideo {
 	position: relative;
@@ -2086,7 +2083,7 @@ body {
 	.projects .slide .slide-info img {
 		display: none;
 	}
-	.projects .slide .slide-img {
+	.projects .slide .active-img {
 		width: 100% !important;
 		height: 241px;
 		-webkit-transform: translateY(-220px);
